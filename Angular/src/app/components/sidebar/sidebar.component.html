@@ -1,0 +1,80 @@
+<div class="app-wrapper" *ngIf="currentUser">
+    <div class="portal-title">
+        Yms
+    </div>
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav="matSidenav" mode="side" opened class="mat-elevation-z8" [fixedInViewport]="true">
+            <div class="sidebar-header">
+                <img class="avatar mat-elevation-z8" src="https://reqres.in/img/faces/2-image.jpg" />
+                <span class="name">Eve Holt</span>
+            </div>
+
+            <button class="menu-button" routerLink="/dashboard">
+                <mat-icon>dashboard</mat-icon>
+                <span>Dashboard</span>
+            </button>
+
+
+
+            <button  class="menu-button" routerLink="/usermanager">
+                <mat-icon>group</mat-icon>
+                <span>Users Manger</span>
+            </button>
+
+            <button  class="menu-button" routerLink="/products">
+                <mat-icon>shopping_bag</mat-icon>
+                <span>List of Products</span>
+            </button>
+
+            <button  class="menu-button" routerLink="/singleproduct">
+                <mat-icon>shopping_bag</mat-icon>
+                <span>Products</span>
+            </button>
+
+            <button  class="menu-button" routerLink="/list-users">
+                <mat-icon>list</mat-icon>
+                <span>List Users</span>
+            </button>
+            <button class="menu-button" routerLink="/add-user">
+                <mat-icon>add</mat-icon>
+                <span>Add Users</span>
+            </button>
+            <button  class="menu-button" routerLink="/user-details">
+                <mat-icon>person</mat-icon>
+                <span>User Details</span>
+            </button>
+            <button class="menu-button" routerLink="/user-details">
+                <mat-icon>calendar_today</mat-icon>
+                <span>Calender</span>
+            </button>
+            <button class="menu-button" routerLink="/user-details">
+                <mat-icon>payment</mat-icon>
+                <span>Payment</span>
+            </button>
+
+
+
+
+
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+
+<div *ngIf="!currentUser">
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+mat-card {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+    background-color: #e4dddd;
+    padding: 50px;
+  }
+  .headerTitle{
+    width: auto;
+    background-color: #1580d9;
+    display: inline;
+    padding: 5px 10px;  
+    display: inline;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px; 
+    
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .button1{
+    background-color: #1580d9;
+    color:white
+  }
+  .buttonData{
+    margin-bottom: 20px;
+  }
+  .button2{
+    background-color:gray;
+    color:white;
+  }
+  .full-width {
+    width: 80%;
+  }
+  .buttonWrapper{
+    margin-right: 10px;
+  }
+.loginPageBtn{
+  border-radius: 10px;
+  min-width: 100px;
+}
+  .loginBtn--facebook{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #1580d9;
+    color: #1580d9;
+    margin-bottom: 10px;
+    border-width: 0.6px;
+    min-width: 170px;
+  }
+  .loginBtn--google{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: indianred;
+    color: indianred;
+    margin-bottom: 10px;
+    border-width: 0.6px;
+    min-width: 170px;
+      }
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+ 
+  .forget-password{
+    padding-left: 0px;
+  }
+  
+  .emailInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 60px 1rem;
+    background :#1b6ca8;
+    display: block;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+  }
+  

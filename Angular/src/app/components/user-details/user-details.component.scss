@@ -1,0 +1,24 @@
+img {
+    border-radius: 50%;
+  }
+
+.userDetails{
+  font: 600 14px/20px Roboto,"Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  font-style: revert;
+}
+.mat-card-subtitle, .mat-card-content {
+
+}
+.userdet{
+  overflow: hidden;
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+.image{
+  overflow: hidden;
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}

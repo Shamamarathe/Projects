@@ -1,0 +1,57 @@
+mat-card {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+  }
+  
+  .header{
+    text-align: center;
+  
+  }
+  .full-width {
+    width: 80%;
+  }
+
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+ 
+  .forget-password{
+    padding-left: 0px;
+  }
+  
+  .emailInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 60px 1rem;
+    background :#1b6ca8;
+    display: block;
+  }
+  .content-wrapper{
+    margin-left: -5px;
+    margin-right: 395px;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+  }
+  .adduser{
+    font: 600 14px/20px Roboto,"Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    font-style: revert;
+  }
+  .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    /* background-color: #3f51b5; */
+    background-color: cornflowerblue;
+  }
+  .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+    color: rgba(0,0,0,.87);
+    background-color: #fff;
+    background-color: lightgray;
+}

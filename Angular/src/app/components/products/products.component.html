@@ -1,0 +1,48 @@
+
+<div class="productlist">Product List</div>
+
+<hr>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile class="product-wrapper" *ngFor="let product of productList;">
+
+        <div>
+        <div class="image-wrapper">
+
+            <img class="zoom" src={{product.image}} />
+        </div>
+        <div class="content-wrapper">
+
+            <div class="product-category">
+                <span class="imagecategory">{{product.category}}</span>
+            </div>
+            <div class="product-title">
+              <span class="producttext">
+                {{product.title}}
+              </span>
+            </div>
+            <div class="product-desc">
+{{product.description}}
+            </div>
+            <div class="product-price">
+              <span class="discount-price">${{ product?.price - product?.price / 10 | number: "1.2-2" }}</span>
+              <span class="actual-price"><s>$ {{ product?.price }}</s></span>
+            </div>
+        
+          <div>Rating: {{product?.rating?.rate}}</div>
+     
+
+          <div class="button-row">
+           <button (click)="updateRating(product?.rating?.rate)" class="rating-star" mat-icon-button *ngFor="let num of [1,2,3,4,5]">
+             <mat-icon aria-label="Example icon-button with a heart icon">{{num <= product?.rating?.rate ? 'star' : 'star_border'}}</mat-icon>
+           </button>
+         </div>
+        </div>
+ 
+      
+    
+ 
+            
+</div>
+    </mat-grid-tile>
+</mat-grid-list>

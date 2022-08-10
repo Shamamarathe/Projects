@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-content>
+    <div class="header">
+      <div class="headerTitle">
+        Yms
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit()" name="loginForm" [formGroup]="loginForm">
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput name="email" placeholder="Username" required />
+          <mat-error *ngIf="!loginForm.controls['email'].valid">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <!-- <span>
+          <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+        </span> -->
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" name="password" matInput [type]=" hide ? 'password' : 'text'" required />
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+          </button>
+          <mat-error *ngIf="!loginForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="buttonData">
+        <span class="buttonWrapper">
+          <button mat-flat-button class="loginPageBtn button1" type="submit">Login</button>
+        </span>
+        <span class="buttonWrapper">
+          <button mat-flat-button class="loginPageBtn button2">Cancel</button>
+        </span>
+      </div>
+
+    </form>
+
+
+    <p>OR</p>
+
+    <button class="loginBtn--facebook">
+      Login with Facebook
+    </button>
+    <br />
+
+    <button class="loginBtn--google">
+      Login with Google
+    </button>
+
+  </mat-card-content>
+</mat-card>

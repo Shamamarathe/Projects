@@ -1,0 +1,28 @@
+
+
+  table {
+    width: 100%;
+  }
+  mat-header-cell, mat-cell {
+    justify-content: left;
+  }
+  .left-text {
+    text-align: left;
+  }
+
+  .fa-map-marker:before {
+    content: "\f041";
+    color: red;
+    margin-left: 30px;
+    font-size: x-large;
+}
+.mat-header-row
+ {
+  background-color: #d3d3d3a3;
+  height: 56px;
+}
+.usermanger{
+  font: 600 14px/20px Roboto,"Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  font-style: revert;
+}

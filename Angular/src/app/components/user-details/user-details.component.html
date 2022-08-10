@@ -1,0 +1,42 @@
+<div class="userDetails">User Details</div>
+
+<hr>
+<div class="content-wrapper">
+    
+    <div>
+        <mat-card-content>
+           
+            <form class="userForm">
+                <div class="image">
+                <img class="avatar mat-elevation-z8" src="https://reqres.in/img/faces/2-image.jpg" /> 
+            </div>
+            <div class="userdet">
+                <div class="FullName">
+                    <label class="form-label">First Name</label>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <input matInput name="email" value={{userDetails.first_name}} />
+                    </mat-form-field>
+                </div>
+
+                <div class="Last Name">
+                    <label>Last Name</label>
+                    <mat-form-field class="full-width" appearance="outline">
+
+                        <input matInput name="last_name" value={{userDetails.last_name}} />
+
+                    </mat-form-field>
+                </div>
+
+
+                <div class="Email">
+                    <label>Email</label>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <input matInput name="email" value={{userDetails.email}} />
+                   </mat-form-field>
+                </div>
+            </div>
+
+            </form>
+        </mat-card-content>
+    </div>
+</div>
